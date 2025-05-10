@@ -35,9 +35,14 @@ const Skills: React.FC = () => {
       skills: ["Git", "GitHub", "Postman", "Jupyter", "VS Code", "Power BI", "Tableau"]
     },
     {
-      title: "Data Science",
+      title: "Data Science & ML",
       icon: <BrainCircuit size={24} />,
-      skills: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn"]
+      skills: [
+        "NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", 
+        "Linear Regression", "Feature Engineering", "EDA", 
+        "Model Evaluation Metrics", "Overfitting & Underfitting", 
+        "Regularization", "Gradient Descent"
+      ]
     },
     {
       title: "Platforms",

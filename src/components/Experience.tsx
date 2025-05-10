@@ -43,7 +43,6 @@ const Experience: React.FC = () => {
         "Cleaned up messy and confusing code, building a fresh, maintainable structure that improved server-side performance.",
         "Handled complex PostgreSQL + PostGIS integration, API design, and testing.",
         "Developed JWT Auth flows, custom model serializers, and modular codebases for maintainability.",
-        "Explored and implemented AI-driven tools like a meeting summarizer using OpenAI APIs.",
         "Built foundational backend features that enabled frontend teams to integrate without errors or bottlenecks."
       ],
       badges: ["Internship"]
