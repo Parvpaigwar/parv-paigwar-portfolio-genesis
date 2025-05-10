@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com/in/parvpaigwar" 
+                href="https://www.linkedin.com/in/parv-paigwar-0a68ab255" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-deep-blue/80 flex items-center justify-center text-soft-purple hover:text-neon-cyan hover:border-neon-cyan border border-transparent transition-all duration-300"

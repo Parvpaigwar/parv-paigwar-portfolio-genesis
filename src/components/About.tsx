@@ -66,7 +66,7 @@ const About: React.FC = () => {
               {
                 icon: <Award className="text-neon-cyan" size={24} />,
                 title: "Problem Solver",
-                description: "130+ DSA problems solved on LeetCode"
+                description: "Strengthened DSA skills using LeetCode"
               }
             ].map((item, index) => (
               <div 

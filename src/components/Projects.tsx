@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
     {
       title: "Grocery Store Management System",
       description: "Complete system with inventory tracking, order management, and sales analytics built with Flask and MySQL.",
-      image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80",
+      image: "/lovable-uploads/ddde631d-8267-450e-9935-64c3833d2567.png",
       technologies: ["Flask", "MySQL", "HTML", "CSS", "JavaScript"],
       githubUrl: "https://github.com/Parvpaigwar/Grocesory-Management-System",
       categories: ["Web", "Full-Stack"]

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X, Github, Linkedin, Code } from 'lucide-react';
@@ -32,7 +31,7 @@ const NavBar: React.FC = () => {
 
   const socialLinks = [
     { name: 'GitHub', href: 'https://github.com/Parvpaigwar', icon: Github },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/parvpaigwar', icon: Linkedin },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/parv-paigwar-0a68ab255', icon: Linkedin },
     { name: 'LeetCode', href: 'https://leetcode.com/Parvpaigwar/', icon: Code },
   ];
 
