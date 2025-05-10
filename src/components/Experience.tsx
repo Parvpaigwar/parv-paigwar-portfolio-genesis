@@ -5,8 +5,10 @@ import { CheckCircle2, CalendarDays, Building2 } from 'lucide-react';
 
 interface ExperienceItem {
   title: string;
+  icon: React.ReactNode;
   company: string;
   period: string;
+  location?: string;
   description: string[];
   badges?: string[];
 }
@@ -14,28 +16,35 @@ interface ExperienceItem {
 const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
-      title: "Backend Developer",
+      title: "Python Backend Developer",
+      icon: <span className="text-xl">💼</span>,
       company: "Engineer Philosophy Web Services Pvt. Ltd.",
-      period: "Current",
+      period: "May 2025 – Present",
+      location: "📍",
       description: [
-        "Contributing to production-level projects",
-        "Gained exposure to AI systems and integration",
-        "Optimizing database queries and API response times",
-        "Implementing secure user authentication flows"
+        "Leading backend development for a real-world web application, contributing significantly to architecture, security, and performance.",
+        "Refactored a poorly written legacy codebase and rebuilt it cleanly from scratch, resulting in a drastic improvement in server stability and efficiency.",
+        "Reduced server load and resolved frontend integration issues by restructuring the backend logic with optimized API flows.",
+        "Introduced new features and functionality, increasing user satisfaction and improving product performance, which directly impacted sales.",
+        "Integrated scalable database models using PostgreSQL + PostGIS and deployed services using AWS.",
+        "Collaborated with frontend teams to deliver seamless API communication and user experience.",
+        "Integrated LLM tools including LLaMA, Gemini, and OpenAI for AI-powered capabilities."
       ],
       badges: ["Full Time", "Current"]
     },
     {
       title: "Python Backend Developer Intern",
+      icon: <span className="text-xl">🧪</span>,
       company: "Engineer Philosophy Web Services Pvt. Ltd.",
-      period: "3 months",
+      period: "Feb 2025 – Apr 2025",
+      location: "📍",
       description: [
-        "Built scalable REST APIs using Django REST Framework",
-        "Handled complex PostgreSQL + PostGIS databases",
-        "Implemented JWT Auth, Custom Models/Views with Role-Based Access",
-        "Deployed applications on AWS with error logging integration",
-        "Collaborated with frontend teams for API integration",
-        "Created comprehensive API documentation and test cases"
+        "Independently developed a backend system from scratch under senior mentorship.",
+        "Cleaned up messy and confusing code, building a fresh, maintainable structure that improved server-side performance.",
+        "Handled complex PostgreSQL + PostGIS integration, API design, and testing.",
+        "Developed JWT Auth flows, custom model serializers, and modular codebases for maintainability.",
+        "Explored and implemented AI-driven tools like a meeting summarizer using OpenAI APIs.",
+        "Built foundational backend features that enabled frontend teams to integrate without errors or bottlenecks."
       ],
       badges: ["Internship"]
     }
@@ -45,7 +54,7 @@ const Experience: React.FC = () => {
     <section id="experience" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-deep-blue/30 to-dark-bg">
       <div className="container mx-auto">
         <SectionTitle 
-          title="Work Experience" 
+          title="🧑‍💻 Experience" 
           subtitle="My professional journey so far"
           className="animate-fade-in-up"
         />
@@ -65,7 +74,9 @@ const Experience: React.FC = () => {
               
               <div className="glass-card p-6 md:p-8 transition-all duration-300 hover:border-neon-cyan/30">
                 <div className="flex flex-wrap gap-2 justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold text-white">{exp.title}</h3>
+                  <h3 className="text-2xl font-bold text-white flex items-center gap-2">
+                    {exp.icon} {exp.title}
+                  </h3>
                   <div className="flex gap-2">
                     {exp.badges?.map((badge) => (
                       <span 
