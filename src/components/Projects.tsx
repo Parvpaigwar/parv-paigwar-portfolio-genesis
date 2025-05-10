@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
     {
       title: "Grocery Store Management System",
       description: "Complete system with inventory tracking, order management, and sales analytics built with Flask and MySQL.",
-      image: "https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80",
       technologies: ["Flask", "MySQL", "HTML", "CSS", "JavaScript"],
       githubUrl: "https://github.com/Parvpaigwar/Grocesory-Management-System",
       categories: ["Web", "Full-Stack"]
@@ -55,7 +55,7 @@ const Projects: React.FC = () => {
       title: "House Price Prediction Model",
       description: "Linear regression model for real estate price forecasting with feature engineering, EDA, and model tuning.",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+      technologies: ["Linear Regression", "Python", "Scikit-learn", "Pandas", "Matplotlib"],
       githubUrl: "https://github.com/Parvpaigwar/House-Price-Prediction",
       categories: ["ML"]
     }

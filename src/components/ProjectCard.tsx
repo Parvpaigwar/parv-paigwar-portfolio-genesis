@@ -12,6 +12,7 @@ interface ProjectCardProps {
   githubUrl?: string;
   isInDevelopment?: boolean;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ 
@@ -22,7 +23,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveUrl, 
   githubUrl,
   isInDevelopment = false,
-  className = ''
+  className = '',
+  style = {}
 }) => {
   return (
     <div 
@@ -30,6 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         "glass-card overflow-hidden group transition-all duration-500 hover:border-neon-cyan/30",
         className
       )}
+      style={style}
     >
       {image && (
         <div className="relative h-48 overflow-hidden">

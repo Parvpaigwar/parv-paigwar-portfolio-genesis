@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { ArrowDown, Download, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Typewriter from './Typewriter';
@@ -38,17 +38,10 @@ const Hero: React.FC = () => {
             
             <div className="flex flex-wrap gap-4 md:gap-6 pt-6">
               <a 
-                href="#" 
+                href="https://drive.google.com/file/d/1e8dipywCmIzBWwFgwm_9peLRwXoxKobj/view?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="relative inline-flex group"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const link = document.createElement('a');
-                  link.href = '/assets/parv-paigwar-resume.pdf'; // This is a placeholder path
-                  link.download = 'parv-paigwar-resume.pdf';
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
               >
                 <Button variant="outline" className="bg-transparent border border-neon-cyan text-neon-cyan hover:bg-neon-cyan/10 group-hover:animate-glow flex gap-2">
                   <Download size={16} />
@@ -79,10 +72,10 @@ const Hero: React.FC = () => {
           </div>
           
           <div className="lg:col-span-2 animate-fade-in">
-            <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-neon-cyan/30 animate-float group hover:border-neon-cyan transition-all duration-300">
-              {/* This would be the profile photo - using a placeholder for now */}
-              <div className="absolute inset-0 bg-gradient-to-br from-deep-blue/50 to-neon-cyan/30 backdrop-blur-sm group-hover:backdrop-blur-none transition-all duration-300"></div>
-              <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1570295999919-56ceb5ecca61')] bg-cover bg-center transform scale-105 group-hover:scale-110 transition-all duration-500"></div>
+            <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-neon-cyan/30 transition-all duration-300 hover:border-neon-cyan">
+              {/* Using your uploaded profile picture */}
+              <div className="absolute inset-0 bg-gradient-to-br from-deep-blue/50 to-neon-cyan/30 backdrop-blur-sm transition-all duration-300 hover:opacity-0"></div>
+              <div className="w-full h-full bg-[url('/lovable-uploads/9a251338-f7a0-4112-9fef-611c025f5db0.png')] bg-cover bg-center transition-transform duration-500 hover:scale-105"></div>
             </div>
           </div>
         </div>

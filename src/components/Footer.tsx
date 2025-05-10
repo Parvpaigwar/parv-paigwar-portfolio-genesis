@@ -10,9 +10,6 @@ const Footer: React.FC = () => {
           <p className="text-soft-purple text-sm">
             © 2025 Parv Paigwar. Built with 💻, ⚙️, and a lot of ☕.
           </p>
-          <p className="text-soft-purple/60 text-xs mt-1">
-            Built with React + Tailwind + TypeScript
-          </p>
         </div>
         
         <div className="flex items-center gap-2">
