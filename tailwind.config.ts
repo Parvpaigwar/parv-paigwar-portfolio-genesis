@@ -1,14 +1,9 @@
-
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
 	darkMode: ["class"],
-	content: [
-		"./pages/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
-	],
+	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	prefix: "",
 	theme: {
 		container: {
@@ -124,6 +119,14 @@ export default {
 					'0%': { transform: 'rotate(0deg)' },
 					'100%': { transform: 'rotate(360deg)' },
 				},
+				'spin-reverse': {
+					"0%": { transform: "rotate(0deg)" },
+					"100%": { transform: "rotate(-360deg)" },
+				},
+				'glow': {
+					"0%": { opacity: "0.4" },
+					"100%": { opacity: "0.8" },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -138,6 +141,9 @@ export default {
 				'type': 'type 3.5s steps(40, end)',
 				'blink': 'blink 1s step-end infinite',
 				'rotate-slow': 'rotate-slow 20s linear infinite',
+				'spin-slow': "spin 8s linear infinite",
+				'spin-slow-reverse': "spin-reverse 12s linear infinite",
+				'glow': "glow 3s ease-in-out infinite alternate",
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
