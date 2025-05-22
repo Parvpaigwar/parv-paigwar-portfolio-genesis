@@ -2,19 +2,36 @@
 import * as THREE from 'three';
 import '@react-three/fiber';
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      // Define any THREE.js elements that might be used as JSX
-      pointLight: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
-      ambientLight: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
-      directionalLight: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
-      // Add more elements as needed
-    }
+declare module '@react-three/fiber' {
+  interface ThreeElements {
+    ambientLight: JSX.IntrinsicElements['ambientLight'];
+    directionalLight: JSX.IntrinsicElements['directionalLight'];
+    pointLight: JSX.IntrinsicElements['pointLight'];
+    mesh: JSX.IntrinsicElements['mesh'];
   }
 }
 
-// Add any module augmentations if needed
-declare module 'three' {
-  // You can extend THREE here if needed
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      ambientLight: React.PropsWithChildren<{
+        intensity?: number;
+        color?: THREE.ColorRepresentation;
+      }>;
+      directionalLight: React.PropsWithChildren<{
+        position?: [number, number, number];
+        intensity?: number;
+        color?: THREE.ColorRepresentation;
+      }>;
+      pointLight: React.PropsWithChildren<{
+        position?: [number, number, number];
+        intensity?: number;
+        color?: THREE.ColorRepresentation;
+      }>;
+      mesh: React.PropsWithChildren<{
+        position?: [number, number, number];
+        rotation?: [number, number, number];
+      }>;
+    }
+  }
 }
