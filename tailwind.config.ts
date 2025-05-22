@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 
@@ -127,6 +128,20 @@ export default {
 					"0%": { opacity: "0.4" },
 					"100%": { opacity: "0.8" },
 				},
+				// New animations for the cyberpunk portal
+				'flicker': {
+					'0%, 100%': { opacity: "0.8" },
+					'50%': { opacity: "0.3" },
+				},
+				'energy-bolt': {
+					'0%': { opacity: "1", height: "0" },
+					'50%': { opacity: "1", height: "100%" },
+					'100%': { opacity: "0", height: "100%" },
+				},
+				'pulse-slow': {
+					'0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
+					'50%': { transform: 'scale(0.9)', opacity: '0.6' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -144,6 +159,15 @@ export default {
 				'spin-slow': "spin 8s linear infinite",
 				'spin-slow-reverse': "spin-reverse 12s linear infinite",
 				'glow': "glow 3s ease-in-out infinite alternate",
+				// New animations for the cyberpunk portal
+				'spin-slower-reverse': "spin-reverse 15s linear infinite",
+				'flicker': "flicker 4s ease-in-out infinite alternate",
+				'flicker-delay': "flicker 5s ease-in-out 0.5s infinite alternate",
+				'flicker-delay-2': "flicker 3s ease-in-out 1s infinite alternate",
+				'energy-bolt': "energy-bolt 2s ease-in-out infinite",
+				'energy-bolt-delay': "energy-bolt 2s ease-in-out 0.7s infinite",
+				'energy-bolt-delay-2': "energy-bolt 2s ease-in-out 1.3s infinite",
+				'pulse-slow': "pulse-slow 4s ease-in-out infinite",
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
