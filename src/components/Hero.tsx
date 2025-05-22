@@ -3,6 +3,7 @@ import React from 'react';
 import { ArrowDown, Download, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Typewriter from './Typewriter';
+import HolographicOrb from './HolographicOrb';
 
 const Hero: React.FC = () => {
   return (
@@ -73,8 +74,7 @@ const Hero: React.FC = () => {
           
           <div className="lg:col-span-2 animate-fade-in">
             <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-neon-cyan/30 transition-all duration-300 hover:border-neon-cyan">
-              <div className="absolute inset-0 bg-gradient-to-br from-deep-blue/50 to-neon-cyan/30 backdrop-blur-sm transition-all duration-300 hover:opacity-0"></div>
-              <div className="w-full h-full bg-gradient-to-r from-deep-blue to-neon-cyan/20 bg-cover bg-center transition-transform duration-500 hover:scale-105"></div>
+              <HolographicOrb />
             </div>
           </div>
         </div>
