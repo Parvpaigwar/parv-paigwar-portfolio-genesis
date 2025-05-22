@@ -10,7 +10,7 @@ export const AnimatedSphereScene: React.FC = () => {
       <directionalLight position={[-10, -10, -5]} intensity={0.5} color="#0a192f" />
       <pointLight position={[0, 0, 2]} intensity={0.8} color="#64ffda" />
       
-      <mesh rotation-x={0.2} rotation-y={0.3}>
+      <mesh rotation={[0.2, 0.3, 0]}>
         <sphereGeometry args={[1, 64, 64]} />
         <MeshDistortMaterial 
           color="#64ffda"
