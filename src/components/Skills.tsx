@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import { 
@@ -38,10 +37,7 @@ const Skills: React.FC = () => {
       title: "Data Science & ML",
       icon: <BrainCircuit size={24} />,
       skills: [
-        "NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", 
-        "Linear Regression", "Feature Engineering", "EDA", 
-        "Model Evaluation Metrics", "Overfitting & Underfitting", 
-        "Regularization", "Gradient Descent"
+        "NumPy", "Pandas", "Scikit-learn", "Linear Regression", "EDA & Feature Engineering", "Model Evaluation"
       ]
     },
     {

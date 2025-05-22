@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             
             <div className="flex flex-wrap gap-4 md:gap-6 pt-6">
               <a 
-                href="https://drive.google.com/file/d/1e8dipywCmIzBWwFgwm_9peLRwXoxKobj/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1XyQ_3xWqA8FUqQZR-0QrqCtt4mxKHjFr/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative inline-flex group"
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
                 </Button>
               </a>
               
-              <a href="https://linkedin.com/in/parvpaigwar" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/parv-paigwar-0a68ab255" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="bg-transparent border border-soft-purple text-soft-purple hover:bg-soft-purple/10 flex gap-2">
                   <Linkedin size={16} />
                   <span>Connect on LinkedIn</span>
@@ -73,9 +73,8 @@ const Hero: React.FC = () => {
           
           <div className="lg:col-span-2 animate-fade-in">
             <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-neon-cyan/30 transition-all duration-300 hover:border-neon-cyan">
-              {/* Using your uploaded profile picture */}
               <div className="absolute inset-0 bg-gradient-to-br from-deep-blue/50 to-neon-cyan/30 backdrop-blur-sm transition-all duration-300 hover:opacity-0"></div>
-              <div className="w-full h-full bg-[url('/lovable-uploads/9a251338-f7a0-4112-9fef-611c025f5db0.png')] bg-cover bg-center transition-transform duration-500 hover:scale-105"></div>
+              <div className="w-full h-full bg-gradient-to-r from-deep-blue to-neon-cyan/20 bg-cover bg-center transition-transform duration-500 hover:scale-105"></div>
             </div>
           </div>
         </div>
