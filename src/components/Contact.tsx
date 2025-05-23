@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-neon-cyan rounded-full"></span>
-                  <span>Solved on good number of Questions in LeetCode</span>
+                  <span>Solved questions consistently to strive for perfection on LeetCode</span>
                 </li>
               </ul>
             </div>
